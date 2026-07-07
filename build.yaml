@@ -8,6 +8,9 @@ include:
     # shield: nice_view
   - board: blecorne_right
     # shield: nice_view
+  - board: nice_nano_v2
+    shield: <existing shields> raw_hid_adapter # <-- required for Raw HID support
+    snippet: studio-rpc-usb-uart # <-- required for ZMK Studio support
 
   # Uncomment the following to build a "settings reset" firmware
   # to clear persistent settings (bluetooth connections, etc).
