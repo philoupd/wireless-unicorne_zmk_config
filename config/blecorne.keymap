@@ -17,15 +17,69 @@
 };
 
 / {
+    behaviors {
+        hml: hml {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HML";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 40 41 39 38 37 36 0 12 24>;
+            hold-trigger-on-release;
+        };
+
+        hmr: hmr {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <0 1 2 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 3 39 40 41 35 11>;
+            hold-trigger-on-release;
+        };
+
+        hml_shift: hml_shift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HML_SHIFT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            flavor = "hold-preferred";
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 40 41 39 38 0 12 24 37 36>;
+            hold-trigger-on-release;
+        };
+
+        hmr_shift: hmr_shift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR_SHIFT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            flavor = "hold-preferred";
+            hold-trigger-key-positions = <0 1 2 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 3 39 40 41 35 11>;
+            hold-trigger-on-release;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-&kp TAB    &kp DE_X         &kp DE_V         &kp DE_L         &kp DE_C  &kp DE_W     &kp DE_K      &kp DE_H  &kp DE_G      &kp DE_F    &kp DE_Q  &kp DE_SHARP_S
-&kp LCTRL  &kp DE_U         &kp DE_I         &kp DE_A         &kp DE_E  &kp DE_O     &kp DE_S      &kp DE_N  &kp DE_R      &kp DE_T    &kp DE_D  &kp DE_Y
-&kp LSHFT  &kp DE_U_UMLAUT  &kp DE_A_UMLAUT  &kp DE_O_UMLAUT  &kp DE_P  &kp DE_Z     &kp DE_B      &kp DE_M  &kp DE_COMMA  &kp DE_DOT  &kp DE_J  &kp ESC
-                                             &kp LGUI         &mo 1     &kp ENTER    &kp DE_SPACE  &mo 2     &kp RALT
+&kp ESC    &kp DE_X         &kp DE_V                &kp DE_L            &kp DE_C                &kp DE_W                      &kp DE_K                     &kp DE_H                 &kp DE_G             &kp DE_F                 &kp DE_Q  &kp DE_SHARP_S
+&kp TAB    &kp DE_U         &hml LEFT_CONTROL DE_I  &hml LEFT_ALT DE_A  &hml LEFT_COMMAND DE_E  &hml_shift LEFT_SHIFT DE_O    &hmr_shift RIGHT_SHIFT DE_S  &hmr RIGHT_COMMAND DE_N  &hmr RIGHT_ALT DE_R  &hmr RIGHT_CONTROL DE_T  &kp DE_D  &kp DE_Y
+&kp LSHFT  &kp DE_U_UMLAUT  &kp DE_A_UMLAUT         &kp DE_O_UMLAUT     &kp DE_P                &kp DE_Z                      &kp DE_B                     &kp DE_M                 &kp DE_COMMA         &kp DE_DOT               &kp DE_J  &kp ENTER
+                                                    &kp LEFT_COMMAND    &mo 1                   &kp ENTER                     &kp DE_SPACE                 &mo 2                    &kp RALT
             >;
         };
 
