@@ -85,28 +85,28 @@
 
         navigation {
             bindings = <
-&trans      &kp N1        &kp N2        &kp N3        &kp N4        &kp N5                 &kp N6        &kp N7    &kp UP         &kp N9     &kp N0         &trans
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4           &kp PAGE_UP   &kp LEFT  &kp DOWN       &kp RIGHT  &kp PAGE_DOWN  &kp DEL
-&trans      &trans        &trans        &trans        &trans        &kp DE_SINGLE_QUOTE    &trans        &trans    &trans         &trans     &trans         &trans
-                                        &kp LGUI      &trans        &kp ENTER              &kp DE_SPACE  &trans    &kp RIGHT_ALT
+&trans      &trans        &trans        &trans        &trans        &trans                 &trans  &kp HOME  &kp UP         &kp END    &kp PAGE_UP    &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4           &trans  &kp LEFT  &kp DOWN       &kp RIGHT  &kp PAGE_DOWN  &kp DEL
+&trans      &trans        &trans        &trans        &trans        &kp DE_SINGLE_QUOTE    &trans  &trans    &trans         &trans     &trans         &trans
+                                        &kp LGUI      &trans        &trans                 &trans  &trans    &kp RIGHT_ALT
             >;
         };
 
         symbols {
             bindings = <
-&trans   &trans  &kp DE_PIPE  &kp DE_LBRC  &kp DE_RBRC  &kp DE_HASH            &kp DE_EXCL           &kp DE_SLASH  &kp DE_BACKSLASH  &kp DE_MINUS  &kp RPAR      &trans
-&kp TAB  &trans  &trans       &kp DE_AT    &kp DE_EURO  &kp DE_DOLLAR          &kp DE_QUESTION       &kp DE_LPAR   &kp DE_RPAR       &kp RBKT      &kp BSLH      &kp DE_SHARP_S
-&trans   &trans  &trans       &kp DE_LT    &kp DE_GT    &kp DE_SINGLE_QUOTE    &kp DE_DOUBLE_QUOTES  &kp DE_LBKT   &kp DE_RBKT       &kp RBRC      &kp DE_UNDER  &trans
-                              &kp LGUI     &trans       &kp SPACE              &kp RET               &trans        &kp RALT
+&trans   &kp DE_APOSTROPHE  &kp DE_PIPE   &kp DE_LBRC  &kp DE_RBRC  &kp DE_HASH            &kp DE_EXCL           &kp DE_SLASH  &kp BACKSLASH  &kp DE_MINUS  &kp RPAR      &trans
+&kp TAB  &kp DE_ASTERISK    &kp DE_AMPS   &kp DE_AT    &kp DE_EURO  &kp DE_DEGREE          &kp DE_QUESTION       &kp DE_LPAR   &kp DE_RPAR    &kp RBKT      &kp BSLH      &kp DE_SHARP_S
+&trans   &kp DOLLAR         &kp DE_CARET  &kp DE_LT    &kp DE_GT    &kp DE_SINGLE_QUOTE    &kp DE_DOUBLE_QUOTES  &kp DE_LBKT   &kp DE_RBKT    &kp RBRC      &kp DE_UNDER  &trans
+                                          &kp LGUI     &trans       &trans                 &trans                &trans        &kp RALT
             >;
         };
 
         numbers {
             bindings = <
-&trans  &trans  &trans  &trans  &trans       &trans           &kp DE_N0     &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_ASTERISK  &trans
-&trans  &trans  &trans  &trans  &kp DE_EURO  &kp DE_DOLLAR    &kp DE_PLUS   &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_SLASH     &kp DE_EQUAL
-&trans  &trans  &trans  &trans  &kp PERCENT  &trans           &kp DE_MINUS  &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_N0        &trans
-                        &trans  &trans       &trans           &trans        &trans     &trans
+&trans  &trans  &trans  &trans            &trans               &trans    &kp DE_N0     &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_ASTERISK  &trans
+&trans  &trans  &trans  &kp DE_LESS_THAN  &kp DE_GREATER_THAN  &trans    &kp DE_PLUS   &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_SLASH     &kp DE_EQUAL
+&trans  &trans  &trans  &trans            &kp PERCENT          &trans    &kp DE_MINUS  &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_N0        &trans
+                        &trans            &trans               &trans    &trans        &trans     &trans
             >;
         };
     };
