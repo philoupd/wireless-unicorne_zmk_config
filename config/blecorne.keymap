@@ -87,7 +87,7 @@
             bindings = <
 &trans  &kp DE_APOSTROPHE  &kp PIPE     &kp LBRC  &kp RBRC     &kp DE_HASH            &kp DE_EXCL           &kp DE_SLASH  &kp DE_BSLH  &kp DE_GRAVE  &kp TILDE      &trans
 &trans  &kp DE_ASTERISK    &kp DE_AMPS  &kp AT    &kp DE_EURO  &kp DE_DEG             &kp DE_QUESTION       &kp DE_LPAR   &kp DE_RPAR  &kp DE_PLUS   &kp DE_DOLLAR  &kp DE_SHARP_S
-&trans  &trans             &kp CARET    &kp LT    &kp GT       &kp DE_SINGLE_QUOTE    &kp DE_DOUBLE_QUOTES  &kp LBKT      &kp RBKT     &kp DE_MINUS  &kp DE_UNDER   &trans
+&trans  &kp HASH           &kp CARET    &kp LT    &kp GT       &kp DE_SINGLE_QUOTE    &kp DE_DOUBLE_QUOTES  &kp LBKT      &kp RBKT     &kp DE_MINUS  &kp DE_UNDER   &trans
                                         &trans    &trans       &trans                 &trans                &trans        &trans
             >;
         };
