@@ -94,9 +94,9 @@
 
         symbols {
             bindings = <
-&trans   &kp DE_APOSTROPHE  &kp DE_PIPE   &kp DE_LBRC  &kp DE_RBRC  &kp DE_HASH            &kp DE_EXCL           &kp DE_SLASH  &kp BACKSLASH  &kp DE_MINUS  &kp RPAR      &trans
-&kp TAB  &kp DE_ASTERISK    &kp DE_AMPS   &kp DE_AT    &kp DE_EURO  &kp DE_DEGREE          &kp DE_QUESTION       &kp DE_LPAR   &kp DE_RPAR    &kp RBKT      &kp BSLH      &kp DE_SHARP_S
-&trans   &kp DOLLAR         &kp DE_CARET  &kp DE_LT    &kp DE_GT    &kp DE_SINGLE_QUOTE    &kp DE_DOUBLE_QUOTES  &kp DE_LBKT   &kp DE_RBKT    &kp RBRC      &kp DE_UNDER  &trans
+&trans   &kp DE_APOSTROPHE  &kp DE_PIPE   &kp DE_LBRC  &kp DE_RBRC  &kp DE_HASH            &kp DE_EXCL           &kp DE_SLASH  &kp BACKSLASH  &kp DE_GRAVE  &kp DE_TILDE   &trans
+&kp TAB  &kp DE_ASTERISK    &kp DE_AMPS   &kp DE_AT    &kp DE_EURO  &kp DE_DEGREE          &kp DE_QUESTION       &kp DE_LPAR   &kp DE_RPAR    &kp DE_PLUS   &kp DE_DOLLAR  &kp DE_SHARP_S
+&trans   &kp DOLLAR         &kp DE_CARET  &kp DE_LT    &kp DE_GT    &kp DE_SINGLE_QUOTE    &kp DE_DOUBLE_QUOTES  &kp DE_LBKT   &kp DE_RBKT    &kp DE_MINUS  &kp DE_UNDER   &trans
                                           &kp LGUI     &trans       &trans                 &trans                &trans        &kp RALT
             >;
         };
